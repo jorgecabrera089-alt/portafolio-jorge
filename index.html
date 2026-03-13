@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Portafolio Jorge Cabrera</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+
+<header class="hero">
+
+<div class="container text-center">
+
+<h1>Jorge Cabrera</h1>
+
+<p class="intro">
+
+Estudiante de desarrollo de software apasionado por crear soluciones tecnológicas,
+aprender nuevas herramientas y desarrollar proyectos funcionales.
+
+</p>
+
+<img src="img/foto.jpg" class="foto">
+
+</div>
+
+</header>
+
+
+<section class="poema">
+
+<h2>Un pensamiento</h2>
+
+<p>
+
+No escribo código solo para que funcione,<br>
+escribo código para construir ideas.<br><br>
+
+Cada línea es un intento<br>
+de convertir la imaginación en realidad.
+
+</p>
+
+</section>
+
+
+<section id="sobre" class="container seccion">
+
+<h2>Sobre mí</h2>
+
+<p>
+
+Soy estudiante enfocado en el desarrollo de software
+con conocimientos en desarrollo web y bases de datos.
+
+</p>
+
+</section>
+
+
+<section id="habilidades" class="container seccion">
+
+<h2>Habilidades</h2>
+
+<div class="row text-center">
+
+<div class="col-md-3">
+<i class="fa-brands fa-html5 icono"></i>
+<p>HTML</p>
+</div>
+
+<div class="col-md-3">
+<i class="fa-brands fa-css3-alt icono"></i>
+<p>CSS</p>
+</div>
+
+<div class="col-md-3">
+<i class="fa-brands fa-bootstrap icono"></i>
+<p>Bootstrap</p>
+</div>
+
+<div class="col-md-3">
+<i class="fa-solid fa-database icono"></i>
+<p>SQL</p>
+</div>
+
+</div>
+
+
+<div class="row text-center mt-4">
+
+<div class="col-md-3">
+<i class="fa-solid fa-users icono"></i>
+<p>Trabajo en equipo</p>
+</div>
+
+<div class="col-md-3">
+<i class="fa-solid fa-handshake icono"></i>
+<p>Compañerismo</p>
+</div>
+
+<div class="col-md-3">
+<i class="fa-solid fa-lightbulb icono"></i>
+<p>Resolución de problemas</p>
+</div>
+
+<div class="col-md-3">
+<i class="fa-solid fa-comments icono"></i>
+<p>Comunicación</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="proyectos" class="container seccion">
+
+<h2>Proyectos</h2>
+
+<div class="row text-center">
+
+<div class="col-md-4">
+
+<h4>CRUD Productos</h4>
+
+<p>Sistema ASP.NET para gestionar productos.</p>
+
+<a href="crud.html" class="btn btn-danger">Ver evidencia</a>
+
+</div>
+
+<div class="col-md-4">
+
+<h4>Sistema Login</h4>
+
+<p>Autenticación conectada a SQL Server.</p>
+
+<a href="login.html" class="btn btn-danger">Ver evidencia</a>
+
+</div>
+
+<div class="col-md-4">
+
+<h4>Portafolio Web</h4>
+
+<p>Portafolio desarrollado con HTML y CSS.</p>
+
+<a href="#" class="btn btn-danger">Ver proyecto</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Jorge Cabrera</p>
+
+</footer>
+
+
+
+<!-- SPIDERMAN MENU SUPERIOR -->
+
+<div id="spiderman-area">
+
+<div class="web"></div>
+
+<img src="img/spiderman.png" id="spiderman">
+
+<div id="menu-web">
+
+<a href="#sobre">Sobre mí</a>
+<a href="#habilidades">Habilidades</a>
+<a href="#proyectos">Proyectos</a>
+
+<a href="https://www.instagram.com/jorge1942_" target="_blank">
+Instagram
+</a>
+
+<a href="https://www.facebook.com/share/17nYaTipiy/" target="_blank">
+Facebook
+</a>
+
+</div>
+
+</div>
+
+
+
+<!-- SPIDEY VOLVER ARRIBA -->
+
+<a href="#" id="spidey">
+
+<img src="img/spidey.png">
+
+<span>Comienzo</span>
+
+</a>
+
+
+<script>
+
+window.addEventListener("scroll", function(){
+
+let scroll = window.scrollY;
+
+let menuSpiderman = document.getElementById("spiderman-area");
+let spideyTop = document.getElementById("spidey");
+
+if(scroll < 300){
+
+menuSpiderman.style.display = "block";
+spideyTop.style.display = "none";
+
+}else{
+
+menuSpiderman.style.display = "none";
+spideyTop.style.display = "flex";
+
+}
+
+});
+
+</script>
+
+
+
+</body>
+</html>
+
