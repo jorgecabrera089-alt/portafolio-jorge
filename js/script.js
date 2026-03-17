@@ -1,19 +1,13 @@
-$(document).ready(function(){
+document.addEventListener('DOMContentLoaded', () => {
+  const spidey = document.getElementById('spidey');
+  const scrollThreshold = 220;
 
-$("#spiderman-container").hover(
+  const updateSpideyVisibility = () => {
+    if (!spidey) return;
+    spidey.style.display = window.scrollY > scrollThreshold ? 'flex' : 'none';
+  };
 
-function(){
+  updateSpideyVisibility();
 
-$("#menu").fadeIn(400);
-
-},
-
-function(){
-
-$("#menu").fadeOut(400);
-
-}
-
-);
-
+  window.addEventListener('scroll', updateSpideyVisibility);
 });
