@@ -22,7 +22,7 @@ background:linear-gradient(135deg,#0d47a1,#e53935);
 
 color:white;
 
-border-bottom:4px solid #ffffff33;
+border-bottom:none;
 
 }
 
@@ -67,10 +67,6 @@ background:linear-gradient(135deg,#0d47a1 10%, #e53935 90%);
 
 color:white;
 
-}
-
-.seccion + .seccion{
-margin-top:-1px;
 }
 
 
@@ -245,6 +241,12 @@ z-index:9999;
 
 .web-bottom{
 
+position:absolute;
+
+bottom:90px; 
+left:50%;
+transform:translateX(-50%);
+
 width:3px;
 height:0;
 
@@ -270,7 +272,7 @@ transition:0.5s;
 
 position:absolute;
 
-bottom:140px;
+bottom:130px; /* queda sobre la telaraña */
 
 left:50%;
 transform:translateX(-50%);
@@ -289,7 +291,6 @@ opacity:0;
 transition:0.3s;
 
 }
-
 /* ANIMACION */
 
 #spidey:hover .web-bottom{
@@ -309,4 +310,5 @@ transform:translateY(80px);
 opacity:1;
 
 }
+
 
